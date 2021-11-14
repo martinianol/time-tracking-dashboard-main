@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./public/css/styles.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <script src="public/js/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="main_card">
+        <div class="image_name">
+          <img src="public/images/image-jeremy.png" />
+          <div class="name_title_container">
+            <div class="title">Report for</div>
+            <div class="name_last_name">
+              <div class="name">Jeremy</div>
+              <div class="last_name">Robson</div>
+            </div>
+          </div>
+        </div>
+        <ul class="time_options">
+          <li><a href="/daily" id="daily">Daily</a></li>
+          <li><a href="/weekly" id="weekly">Weekly</a></li>
+          <li><a href="/monthly" id="monthly">Monthly</a></li>
+        </ul>
+      </div>
+      <section class="cards_container">
+        <% data.forEach(element => { %>
+
+        <div class="standard_card_container">
+          <figure class="icon <%= element.title.toLowerCase() %>">
+            <img src="public/images/<%=element.icon%>" />
+          </figure>
+          <div class="standard_card_info">
+            <div class="category_container">
+              <div class="category_title"><%=element.title%></div>
+              <figure class="elipses">
+                <a>
+                  <img src="public/images/icon-ellipsis.svg" />
+                </a>
+              </figure>
+            </div>
+            <div class="category_time">
+              <div class="actual_info"><%=element.current%>hrs</div>
+              <div class="last_info">
+                Last <%= element.type %> - <%=element.previous%>hrs
+              </div>
+            </div>
+          </div>
+          <div class="border_top_card" id="borderTop"></div>
+        </div>
+
+        <% }) %>
+      </section>
+    </main>
+
+    <!--  <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mars</a>.
+    </footer>  -->
+  </body>
+</html>
