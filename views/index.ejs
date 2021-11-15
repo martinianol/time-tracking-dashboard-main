@@ -34,10 +34,10 @@
         <div class="image_name">
           <img alt="profile picture" src="public/images/image-jeremy.png" />
           <div class="name_title_container">
-            <div class="title">Report for</div>
+            <h1 class="title">Report for</h1>
             <div class="name_last_name">
-              <div class="name">Jeremy</div>
-              <div class="last_name">Robson</div>
+              <p class="name">Jeremy</p>
+              <p class="last_name">Robson</p>
             </div>
           </div>
         </div>
@@ -51,21 +51,19 @@
         <% data.forEach(element => { %>
 
         <div class="standard_card_container">
-          <figure class="icon <%= element.title.toLowerCase() %>">
+          <div class="icon <%= element.title.toLowerCase() %>">
             <img alt="icon <%=element.icon%>" src="public/images/<%=element.icon%>" />
-          </figure>
+          </div>
           <div class="standard_card_info">
             <div class="category_container">
-              <div class="category_title"><%=element.title%></div>
+              <h2 class="category_title"><%=element.title%></h2>
               <a>
                 <i class="fas fa-ellipsis-h"></i>
               </a>
             </div>
             <div class="category_time">
-              <div class="actual_info"><%=element.current%>hrs</div>
-              <div class="last_info">
-                Last <%= element.type %> - <%=element.previous%>hrs
-              </div>
+              <p class="actual_info"><%=element.current%>hrs</p>
+              <p class="last_info">Last <%= element.type %> - <%=element.previous%>hrs</p>
             </div>
           </div>
           <div class="border_top_card"></div>

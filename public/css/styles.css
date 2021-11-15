@@ -55,6 +55,24 @@ main {
   border-radius: 50%;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
 .image_name {
   background-color: #5747ea;
   border-radius: 15px;
@@ -73,6 +91,8 @@ main {
   font-size: 24px;
   font-weight: 300;
   line-height: 28.4px;
+  display: flex;
+  gap: 5px;
 }
 
 .time_options {
@@ -257,6 +277,7 @@ i {
     line-height: 47px;
     letter-spacing: 0px;
     text-align: left;
+    flex-direction: column;
   }
 
   .time_options {
