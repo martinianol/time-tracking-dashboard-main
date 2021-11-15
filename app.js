@@ -38,10 +38,10 @@ app.get('/monthly', (req, res, next) => {
 
 const PORT = process.env.PORT || 3000;
 
-/* app.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Port up and running on ${PORT}`)
 });
- */
+
 
 
 module.exports = app;

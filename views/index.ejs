@@ -30,7 +30,7 @@
   </head>
   <body>
     <main>
-      <div class="main_card">
+      <section class="main_card">
         <div class="image_name">
           <img alt="profile picture" src="public/images/image-jeremy.png" />
           <div class="name_title_container">
@@ -46,7 +46,7 @@
           <li><a href="/weekly" id="weekly">Weekly</a></li>
           <li><a href="/monthly" id="monthly">Monthly</a></li>
         </ul>
-      </div>
+      </section>
       <section class="cards_container">
         <% data.forEach(element => { %>
 
@@ -57,12 +57,9 @@
           <div class="standard_card_info">
             <div class="category_container">
               <div class="category_title"><%=element.title%></div>
-              <figure class="elipses">
-                <a>
-                  <i class="fas fa-ellipsis-h"></i>
-                  <img alt="elispes icon" src="public/images/icon-ellipsis.svg" />
-                </a>
-              </figure>
+              <a>
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
             </div>
             <div class="category_time">
               <div class="actual_info"><%=element.current%>hrs</div>

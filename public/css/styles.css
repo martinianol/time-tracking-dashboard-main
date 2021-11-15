@@ -19,7 +19,7 @@ a:hover {
   cursor: pointer;
 }
 
-a img:hover {
+a i:hover {
   filter: brightness(0) invert(1);
 }
 
@@ -114,16 +114,10 @@ main {
 .icon.exercise img {
   top: 0px;
 }
-.standard_card_container .elipses {
-  margin: 0;
-  padding: 0;
-}
 
 i {
-  height: 18px;
-  width: 18px;
+  font-size: 24px;
   color: #bbc0ff;
-  word-spacing: normal;
 }
 
 .standard_card_info {
