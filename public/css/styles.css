@@ -119,6 +119,13 @@ main {
   padding: 0;
 }
 
+i {
+  height: 18px;
+  width: 18px;
+  color: #bbc0ff;
+  word-spacing: normal;
+}
+
 .standard_card_info {
   background-color: #1c204b;
   border-bottom-left-radius: 15px;
