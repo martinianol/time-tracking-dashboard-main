@@ -26,7 +26,7 @@
     <main>
       <div class="main_card">
         <div class="image_name">
-          <img src="public/images/image-jeremy.png" />
+          <img alt="profile picture" src="public/images/image-jeremy.png" />
           <div class="name_title_container">
             <div class="title">Report for</div>
             <div class="name_last_name">
@@ -46,14 +46,14 @@
 
         <div class="standard_card_container">
           <figure class="icon <%= element.title.toLowerCase() %>">
-            <img src="public/images/<%=element.icon%>" />
+            <img alt="icon <%=element.icon%>" src="public/images/<%=element.icon%>" />
           </figure>
           <div class="standard_card_info">
             <div class="category_container">
               <div class="category_title"><%=element.title%></div>
               <figure class="elipses">
                 <a>
-                  <img src="public/images/icon-ellipsis.svg" />
+                  <img alt="elispes icon" src="public/images/icon-ellipsis.svg" />
                 </a>
               </figure>
             </div>
@@ -64,7 +64,7 @@
               </div>
             </div>
           </div>
-          <div class="border_top_card" id="borderTop"></div>
+          <div class="border_top_card"></div>
         </div>
 
         <% }) %>
